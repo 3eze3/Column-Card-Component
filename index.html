@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
       rel="stylesheet" />
     <!--  -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleCss/style.css" />
+    <link rel="stylesheet" href="resetCss/app.css" />
     <link
       rel="icon"
       type="image/png"
@@ -20,12 +21,51 @@
     <title>Frontend Mentor | 3-column preview card component</title>
   </head>
   <body>
-    Sedans Choose a sedan for its affordability and excellent fuel economy.
-    Ideal for cruising in the city or on your next road trip. SUVs Take an SUV
-    for its spacious interior, power, and versatility. Perfect for your next
-    family vacation and off-road adventures. Luxury Cruise in the best car
-    brands without the bloated prices. Enjoy the enhanced comfort of a luxury
-    rental and arrive in style.
+    <main class="cars">
+      <section class="cars__wrappercards">
+        <article class="cars__card card cars__card--sends">
+          <div class="card__content">
+            <div class="card__logocars">
+              <img src="images/icon-sedans.svg" alt="logo car sendans" />
+            </div>
+            <h1 class="card__title">SENDANS</h1>
+            <p class="card__description">
+              Choose a sedan for its affordability and excellent fuel economy.
+              Ideal for cruising in the city or on your next road trip.
+            </p>
+          </div>
+          <a class="card__linkmore card__linkmore--sends">Learn More</a>
+        </article>
+        <article class="cars__card card cars__card--suvs">
+          <div class="card__content">
+            <div class="card__logocars">
+              <img src="images/icon-suvs.svg" alt="logo car SUVS" />
+            </div>
+            <h1 class="card__title">SUVS</h1>
+            <div class="card__description">
+              <p>
+                Take an SUV for its spacious interior, power, and versatility.
+                Perfect for your next family vacation and off-road adventures.
+              </p>
+            </div>
+          </div>
+          <a class="card__linkmore card__linkmore--suvs">Learn More</a>
+        </article>
+        <article class="cars__card card cars__card--luxury">
+          <div class="card__content">
+            <div class="card__logocars">
+              <img src="images/icon-luxury.svg" alt="logo car LUXURY" />
+            </div>
+            <h1 class="card__title">LUXURY</h1>
+            <p class="card__description">
+              Cruise in the best car brands without the bloated prices. Enjoy
+              the enhanced comfort of a luxury rental and arrive in style.
+            </p>
+          </div>
+          <a class="card__linkmore card__linkmore--luxury">Learn More</a>
+        </article>
+      </section>
+    </main>
 
     <footer class="attribution">
       Challenge by
