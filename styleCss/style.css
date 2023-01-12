@@ -2,7 +2,7 @@
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
   --very-dark-cyan: hsl(179, 100%, 13%);
-  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --transparent-white: hsla(0, 0%, 100%, 0.555);
   /* paragraphs */
   --very-light-gray: hsl(0, 0%, 95%);
   /* background, hedings , buttons */
@@ -11,6 +11,118 @@
   --font-size-body: 15px
 }
 
+.cars {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--transparent-white);
+  display: grid;
+  place-content: center;
+}
+
+
+.cars__wrappercards {
+  width: 100%;
+  height: 31rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 312px);
+  border-radius: .75rem;
+  transition: .1s ease-in-out;
+}
+
+.cars__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.8rem;
+  gap: 4rem;
+}
+
+.card__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card__logocars {
+  width: 4rem;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 2.5em;
+  font-family: var(--font-big-shoulders-display);
+  color: var(--very-light-gray);
+}
+
+.card__description {
+  color: var(--transparent-white);
+  line-height: 1.5;
+  font-family: var(--font-lexend-deca);
+}
+
+.card__linkmore {
+  font-family: var(--font-lexend-deca);
+  background-color: var(--very-light-gray);
+  padding: .8rem 2rem;
+  border-radius: 2rem;
+  font-weight: 300;
+  font-size: .9em;
+  border: solid 1px transparent;
+  transition: border .2s ease-in, background-color .3s ease-in-out;
+  cursor: pointer;
+}
+
+.card__linkmore:hover {
+  background-color: transparent;
+  color: var(--very-light-gray);
+  border-color: var(--very-light-gray);
+  transition: .2s ease-in;
+}
+
+.card__linkmore--sends {
+  color: var(--bright-orange);
+}
+
+.card__linkmore--suvs {
+  color: var(--dark-cyan);
+}
+
+.card__linkmore--luxury {
+  color: var(--very-dark-cyan);
+}
+
+.cars__card--sends {
+  background-color: var(--bright-orange);
+}
+
+.cars__card--suvs {
+  background-color: var(--dark-cyan);
+}
+
+.cars__card--luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+/*  */
+@media screen and (max-width:480px) {
+  .cars {
+    height: 100%;
+  }
+
+  .cars__wrappercards {
+    min-height: 100rem;
+  }
+
+  .cars__wrappercards {
+    grid-template-columns: 270px;
+    transition: .15s ease-in-out;
+  }
+}
+
+/* Style Attribution */
 .attribution {
   font-size: 11px;
   text-align: center;
