@@ -1,0 +1,21 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* paragraphs */
+  --very-light-gray: hsl(0, 0%, 95%);
+  /* background, hedings , buttons */
+  --font-big-shoulders-display: 'Big Shoulders Display', cursive;
+  --font-lexend-deca: 'Lexend Deca', sans-serif;
+  --font-size-body: 15px
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
